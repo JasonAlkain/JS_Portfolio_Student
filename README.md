@@ -1,6 +1,6 @@
 # JS_Portfolio_Student
-<hr>
-Projects from the javascript coruse from 
+
+Projects from the javascript coruse from The Tech Academy I have completed:
 
 * Using alerts 
   * alerts are used to display information and warn about actions
@@ -47,3 +47,5 @@ Projects from the javascript coruse from
 * Dynamic responsiveness
   * this is done through a tik tac toe game
 
+Each of these projects depict anywhere from surface level knowlegde to funny and easter egg ridden of each topic.
+To view them click [here](https://github.com/JasonAlkain/JavaScript_Projects)
