@@ -21,7 +21,8 @@ Projects from the javascript coruse from
   * this is in the scope of 'Scope and time function'
   * Also...
   * ...
-> - Timming...  is everything Gary.
+
+Timming...  is everything Gary.
 > - Heuristic Unified Entity (H.U.E.)
 
 * String methods
