@@ -22,7 +22,7 @@ Projects from the javascript coruse from
   * Also...
   * ...
 
-Timming...  is everything Gary.
+> Timming...  is everything Gary.
 > - Heuristic Unified Entity (H.U.E.)
 
 * String methods
