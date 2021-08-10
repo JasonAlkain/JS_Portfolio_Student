@@ -1,5 +1,6 @@
-# JS_Portfolio_Student
+# Portfolio Student
 
+## Javascript Projects
 Projects from the javascript coruse from The Tech Academy I have completed:
 
 * Using alerts 
@@ -48,4 +49,14 @@ Projects from the javascript coruse from The Tech Academy I have completed:
   * this is done through a tik tac toe game
 
 Each of these projects depict anywhere from surface level knowlegde to funny and easter egg ridden of each topic.
-To view them click [here](https://github.com/JasonAlkain/JavaScript_Projects)
+
+To view them in more detail click [here](https://github.com/JasonAlkain/JavaScript_Projects)
+
+<hr>
+## Python Projects
+
+* [Basic Pyhton Projects](https://github.com/JasonAlkain/Python_Projects)
+* [Python Web Page Generator](https://github.com/JasonAlkain/PythonWebPageGenerator)
+* [Pyhton File Mover](https://github.com/JasonAlkain/FileMover)
+* [Pyhton Django Hello World](https://github.com/JasonAlkain/Hello_World)
+* [Pyhton Django Django Checkbook](https://github.com/JasonAlkain/Django_Checkbook)
