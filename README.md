@@ -53,6 +53,7 @@ Each of these projects depict anywhere from surface level knowlegde to funny and
 To view them in more detail click [here](https://github.com/JasonAlkain/JavaScript_Projects)
 
 <hr>
+
 ## Python Projects
 
 * [Basic Pyhton Projects](https://github.com/JasonAlkain/Python_Projects)
