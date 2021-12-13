@@ -62,6 +62,8 @@ To view them in more detail click [here](https://github.com/JasonAlkain/JavaScri
 * [Pyhton Django Hello World](https://github.com/JasonAlkain/Hello_World)
 * [Pyhton Django Django Checkbook](https://github.com/JasonAlkain/Django_Checkbook)
 
+<hr>
+
 ## C# | .Net | ASP.Net Projects
 
 * [Collection of concepts and projects](https://github.com/JasonAlkain/Basic_CS_Programs)
