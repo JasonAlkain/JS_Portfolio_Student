@@ -1,5 +1,8 @@
 # Portfolio Student
 
+My living student portfolio website!
+Check out this website [here](https://jasonalkain.github.io/JS_Portfolio_Student/)!
+
 ## Javascript Projects
 Projects from the javascript coruse from The Tech Academy I have completed:
 
