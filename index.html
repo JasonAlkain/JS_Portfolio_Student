@@ -5,174 +5,307 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zachary Aars</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/Square Custom Picture.png" />
 </head>
 
 <!-- Body -->
 
-<body class="Background">
+<body class="bg-secondary text-light">
 
     <!-- Navbar -->
-    <div class="Navbar">
-        <a class="active" href="#Home">Home</a>
-        <!-- New section added -->
-        <a href="#Slideshow">Slideshow</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <!-- Onclick and ondblclick functions added to open and close the contact form -->
-        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
-    </div>
-
-    <!-- Background video -->
-    <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
-                <source src="images/video/Typing.mp4" type="video/mp4">
-                <!-- Display message if video fails to run -->
-                Your browser does not support HTML5 video.
-            </video>
-    </div>
-
-    <!-- Video text -->
-    <div class="Video_Text">
-        <h1 class="white-text">Zachary's Portfolio</h1>
-        <strong>
-                <p class="center">
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                    </q>
-                    <br> -Joseph Weizenbaum<br>
-                    <br>
-                    My name is Zachary. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br>Thank you for stopping by and enjoy! 
-                </p>
-            </strong>
-    </div>
-
-    <!-- Slideshow section added -->
-    <div id="Slideshow">
-        <div id="Slideshow_Background">
-            <div id="Slideshow_Container">
-                <!-- Slide 1 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./images/Square Personal Photo.png" alt="Picture of yourself">
-                    <div class="text">I'm available to assist you on your project!</div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    <a class="nav-link" href="#About">About</a>
+                    <a class="nav-link" href="#Slideshow">Slideshow</a>
+                    <a class="nav-link" href="#GitHub">GitHub</a>
+                    <a class="nav-link" href="#ss_Projects">Projects</a>
+                    <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bootstrap 4</a>
                 </div>
-                <!-- Slide 2 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
-                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-                </div>
-                <!-- Slide 3 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./images/Python.png" alt="Python logo">
-                    <div class="text">the popular programming language Python,</div>
-                </div>
-                <!-- Slide 4 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./images/C_Sharp_and_Dot_NET.png" alt="C# logo">
-                    <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
-                </div>
-                <!-- Slide 5 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./images/SQL_and_Database.jpg" alt="SQL logo">
-                    <div class="text">back end development, databases and SQL.</div>
-                </div>
-                <!-- Slide 6 of 6 -->
-                <div class="mySlides fade">
-                    <img class="Slideshow_Images" src="./images/Square Custom Picture.png" alt="Replace with a picture of your choosing">
-                    <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div>
-                </div>
-                <!-- Previous and next buttons -->
-                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            <!-- Adds a space between the slideshow images and the dots -->
-
-            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-            <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- About section -->
-    <div class="Row" id="About">
-        <!-- Left column -->
-        <div class="Column_2">
-            <img src="./images/html_custom.png" alt="html_custom.png">
-        </div>
-        <!-- Right column -->
-        <div class="Column_1">
-            <h1>About</h1>
-            <p>
-                I am a software developer and entrepreneur who loves to code! As a step father of four, I enjoy time with my family and traveling.
-                <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript,
-                SQL, C# and more.
-                <br>
-                <br>I am a full-stack developer and would love to work with you on your project. <a href="#About" onclick="openForm()">Contact</a> me below!
-            </p>
-        </div>
-    </div>
+    <main>
+        <!-- Header -->
+        <div>
+            <div class="cardtext-white">
+                <!-- card-img -->
+                <div class="card-img">
+                    <!-- Background video -->
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="Typing_Video">
+                        <source src="images/video/Typing.mp4" type="video/mp4">
+                        <!-- Display message if video fails to run -->
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <!-- card-img-overlay -->
+                <div class="card-img-overlay">
+                    <div class="card-title text-center m-3 p-4">
+                        <div class="container bg-dark bg-gradient border-dark shadow rounded-top rounded-pill p-5 w-75">
+                            <h1>Zachary's Portfolio</h1>
+                            <br>
+                            <div class="m-5">
+                                <strong>
+                                    <p>My name is Zachary. Welcome to my portfolio website. On it, I will tell you about
+                                        my
+                                        background and experience.
+                                    </p>
+                                    <p>Thank you for stopping by and enjoy!</p>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- GitHub section -->
-    <div class="Row" id="GitHub">
-        <!-- Left column -->
-        <div class="Column_1">
-            <h1>GitHub</h1>
-            <p>You can view my coding projects on my GitHub profile here:
-                <br>
-                <p class="center"><a href="https://github.com/JasonAlkain?tab=repositories" target="_blank">Zachary Aars (Jason Alkain)
-                        Github</a></p>
-            </p>
-            <p>
-                Double click The image to the right to view my github profile!
-            </p>
+                    <div class="card-text text-center mx-0 my-5">
+                        <div class="container my-5 w-50">
+                            <figure class="bg-dark bg-gradient border-dark shadow-lg p-5 mb-5 rounded-pill">
+                                <blockquote class="blockquote mx-4 my-0">
+                                    The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or field of battle and to command such
+                                    unswervingly dutiful actors or troops.
+                                </blockquote>
+                                <figcaption class="blockquote-footer mx-4 my-0">
+                                    <strong>Joseph Weizenbaum</strong>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Right column -->
-        <div class="Column_2">
-            <img id="githubLink" src="images/GitHub.png">
+
+
+        <!-- Slideshow section -->
+        <div class="container-fluid mx-auto my-5 p-2">
+            <div id="Slideshow" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 of 6 -->
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/Square Personal Photo.png" alt="Picture of yourself">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Ready for work</h5>
+                            <p>I'm available to assist you on your project!</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Full-stack Software Developer</h5>
+                            <p>I am a full-stack software developer, trained in:</p>
+                            <p>HTML, CSS, JavaScript, Python, Django, C#, and ASP.Net</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/Python.png" alt="Python logo">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Python Programming</h5>
+                            <p>Built Python applications and utilized various Python modules.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>C# and .NET Framework</h5>
+                            <p>Buit applications using ASP.NET, MVC</p>
+                        </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Back End Development</h5>
+                            <p>Databases,Microsoft SQL, SQLite, RDBMS</p>
+                        </div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/Square Custom Picture.png" alt="Replace with a picture of your choosing">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <a class="nav-link text-white" href="" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <h5>Contact Me</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Slideshow" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Slideshow" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-    </div>
 
-    <!-- Contact form -->
-    <div id="Contact">
-        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-        <div class="form-popup" id="myForm">
-            <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-            <form action="https://formspree.io/f/mbjqgzpz" method="POST" class="form-container">
-                <h1>Contact</h1>
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Type your name here" name="name" required>
-                <label for="phone"><b>Phone</b></label>
-                <input type="text" placeholder="Type your phone number here" name="phone">
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Type your email address here" name="email" required>
-                <label for="message"><b>Message</b></label>
-                <input type="text" placeholder="Type your message here" name="message">
+        <!-- Sections -->
+        <div class="container-fluid mx-auto p-2">
+            <!-- About section -->
+            <div class="row m-2 bg-gradient p-4" id="About">
+                <!-- Left column -->
+                <div class="col">
+                    <img src="./images/html_custom.png" alt="html_custom.png" class="rounded">
+                </div>
+                <!-- Right column -->
+                <div class="col text-center">
+                    <h1>About</h1>
+                    <div class="container w-75">
+                        <p>
+                            I am a software developer and entrepreneur who loves to code! As a step father of four, I enjoy time with my family and traveling.
+                        </p>
+                        <p>
+                            I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                                Academy</a>’s Software Developer Boot Camp. There I was worked on projects involving coding languages such as: HTML, CSS, JavaScript, C#, Python and more. I was taught how to use those languages to build applications, web
+                            apps, and fulling integrated databases.
+                        </p>
+                        <p>
+                            I am a full-stack developer and would love to work with you on your project. <a href="#About" onclick="openForm()">Contact</a> me below!
+                        </p>
+                    </div>
 
-                <button type="submit" class="btn">SUBMIT</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-            </form>
+                </div>
+            </div>
+            <!-- GitHub section -->
+            <div class="row m-2 bg-gradient p-4" id="GitHub">
+                <!-- Left column -->
+                <div class="col col-6">
+                    <div class="text-center">
+                        <h1>GitHub</h1>
+                        <p>You can view my coding projects on my GitHub profile here:</p>
+                        <p>
+                            <a href="https://github.com/JasonAlkain?tab=repositories" target="_blank">
+                                Zachary Aars (Jason Alkain) Github
+                            </a>
+                        </p>
+                        <p>
+                            Alternatively, you can also click the image to the right!
+                        </p>
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div class="col">
+                    <a href="https://github.com/JasonAlkain?tab=repositories" target="_blank">
+                        <img id="githubLink" src="images/GitHub.png" class="img-thumbnail w-75 float-end">
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
 
+
+
+        <!-- Project slideshow section-->
+        <div class="container-fluid mx-auto p-2 my-5">
+            <div class="text-center p-5 mx-auto">
+                <h1><u>Projects</u></h1>
+            </div>
+
+            <div id="ss_Projects" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#ss_Projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#ss_Projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 of 6 -->
+                    <div class="carousel-item active" data-bs-interval="20000">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/PH_html.png" alt="Picture of yourself">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>-1-</h5>
+                            <p>---</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/PH_html.png" alt="HTML, CSS, and JS logos">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>-2-</h5>
+                            <p>---</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ss_Projects" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ss_Projects" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="modal fade text-dark" id="contactModal" tabindex="-1" aria-labelledby="contact" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contact">Contact</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactform" class="form-container" action="https://formspree.io/f/mbjqgzpz" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="col-form-label"><b>Name</b></label>
+                                <input class="form-control" type="text" placeholder="Agent Smith" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label"><b>Phone</b></label>
+                                <input class="form-control" type="text" placeholder="012-345-6789" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label"><b>Email</b></label>
+                                <input class="form-control" type="text" placeholder="example@mail.com" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="col-form-label"><b>Message</b></label>
+                                <textarea class="form-control" type="text" placeholder="Type your message here!" name="message" rows="5"></textarea>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- Footer section -->
-    <footer>
-        <p class="center">Code referenced from &copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a> | Zacharty Aars</p><br>
+    <footer class="footer mt-auto px-4 py-2 bg-light text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="center">Code referenced from &copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a> | Zacharty Aars
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </footer>
-    <script src="js/portfolio.js"></script>
+    <!-- script tags -->
+    <script src="JS/portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
