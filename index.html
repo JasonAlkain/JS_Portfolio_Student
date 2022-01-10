@@ -28,7 +28,6 @@
                     <a class="nav-link" href="#GitHub">GitHub</a>
                     <a class="nav-link" href="#ss_Projects">Projects</a>
                     <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bootstrap 4</a>
                 </div>
             </div>
         </div>
@@ -83,8 +82,8 @@
         </div>
 
 
-        <!-- Slideshow section -->
-        <div class="container-fluid mx-auto my-5 p-2">
+        <!-- Carousel Slide section -->
+        <div class="container mx-auto my-5 p-2">
             <div id="Slideshow" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -108,8 +107,7 @@
                         <img class="d-block w-50 rounded mx-auto" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
                         <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
                             <h5>Full-stack Software Developer</h5>
-                            <p>I am a full-stack software developer, trained in:</p>
-                            <p>HTML, CSS, JavaScript, Python, Django, C#, and ASP.Net</p>
+                            <p>Training in:<br>HTML, CSS, JavaScript, Python, Django, C#, ASP.Net, and more!</p>
                         </div>
                     </div>
                     <!-- Slide 3 of 6 -->
@@ -140,19 +138,20 @@
                     <div class="carousel-item">
                         <img class="d-block w-50 rounded mx-auto" src="./images/Square Custom Picture.png" alt="Replace with a picture of your choosing">
                         <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Contact Me</h5>
                             <a class="nav-link text-white" href="" data-bs-toggle="modal" data-bs-target="#contactModal">
-                                <h5>Contact Me</h5>
+                                <p>Click here to send me a message</p>
                             </a>
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#Slideshow" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon bg-dark  rounded-end rounded-circle" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#Slideshow" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon bg-dark rounded-start rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden-focusable">Next</span>
                 </button>
             </div>
         </div>
@@ -210,10 +209,8 @@
             </div>
         </div>
 
-
-
         <!-- Project slideshow section-->
-        <div class="container-fluid mx-auto p-2 my-5">
+        <div class="container mx-auto p-2 my-5">
             <div class="text-center p-5 mx-auto">
                 <h1><u>Projects</u></h1>
             </div>
@@ -226,7 +223,7 @@
                 <div class="carousel-inner">
                     <!-- Slide 1 of 6 -->
                     <div class="carousel-item active" data-bs-interval="20000">
-                        <img class="d-block w-50 rounded mx-auto" src="./images/PH_DjangoProject.png" alt="...">
+                        <img class="d-block w-100 rounded mx-auto" src="./images/PH_DjangoProject.png" alt="...">
                         <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
                             <h5>-1-</h5>
                             <p>---</p>
@@ -234,7 +231,7 @@
                     </div>
                     <!-- Slide 2 -->
                     <div class="carousel-item" data-bs-interval="20000">
-                        <img class="d-block w-50 rounded mx-auto" src="./images/PH_TheaterBlog.png" alt="...">
+                        <img class="d-block w-100 rounded mx-auto" src="./images/PH_TheaterBlog.png" alt="...">
                         <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
                             <h5>-2-</h5>
                             <p>---</p>
@@ -261,29 +258,33 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="contactform" class="form-container" action="https://formspree.io/f/mbjqgzpz" method="POST">
+                        <form class="form-container" action="https://formspree.io/f/mbjqgzpz" method="POST">
                             <div class="mb-3">
                                 <label for="name" class="col-form-label"><b>Name</b></label>
-                                <input class="form-control" type="text" placeholder="Agent Smith" name="name" required>
+                                <input type="text" class="form-control" placeholder="Agent Smith" name="name" required>
                             </div>
+
                             <div class="mb-3">
                                 <label for="phone" class="col-form-label"><b>Phone</b></label>
-                                <input class="form-control" type="text" placeholder="012-345-6789" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                <input type="text" class="form-control" placeholder="012-345-6789" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                             </div>
+
                             <div class="mb-3">
                                 <label for="email" class="col-form-label"><b>Email</b></label>
-                                <input class="form-control" type="text" placeholder="example@mail.com" name="email" required>
+                                <input type="text" class="form-control" placeholder="example@mail.com" name="email" required>
                             </div>
+
                             <div class="mb-3">
                                 <label for="message" class="col-form-label"><b>Message</b></label>
-                                <textarea class="form-control" type="text" placeholder="Type your message here!" name="message" rows="5"></textarea>
+                                <textarea class="form-control" placeholder="Type your message here!" name="message" rows="5"></textarea>
+                            </div>
+                            <hr>
+                            <div class="mb-3">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
                     </div>
                 </div>
             </div>
