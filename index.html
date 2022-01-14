@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <main>
+    <div class="m-0 p-o w-100">
         <!-- Header -->
         <div>
             <div class="cardtext-white">
@@ -47,7 +47,7 @@
                     </video>
                 </div>
                 <!-- card-img-overlay -->
-                <div class="card-img-overlay">
+                <div class="card-img-overlay font-monospace">
                     <div class="card-title text-center m-3 p-4">
                         <div class="container bg-dark bg-gradient border-dark shadow rounded-top rounded-pill p-5 w-75">
                             <h1>Zachary's Portfolio</h1>
@@ -82,6 +82,13 @@
         </div>
 
 
+        <!-- Carousel Slide section Header -->
+        <div class="container mx-auto pt-5">
+            <div class="text-center">
+                <h1><u>Slideshow</u></h1>
+            </div>
+
+        </div>
         <!-- Carousel Slide section -->
         <div class="container mx-auto my-5 p-2">
             <div id="Slideshow" class="carousel slide" data-bs-ride="carousel">
@@ -157,7 +164,7 @@
         </div>
 
         <!-- Sections -->
-        <div class="container-fluid mx-auto p-2">
+        <div class="container-fluid mx-0 p-2">
             <!-- About section -->
             <div class="row m-2 bg-gradient p-4" id="About">
                 <!-- Left column -->
@@ -166,7 +173,9 @@
                 </div>
                 <!-- Right column -->
                 <div class="col text-center">
-                    <h1>About</h1>
+                    <h1>
+                        <U>About</u>
+                    </h1>
                     <div class="container w-75">
                         <p>
                             I am a software developer and entrepreneur who loves to code! As a step father of four, I enjoy time with my family and traveling.
@@ -188,12 +197,12 @@
                 <!-- Left column -->
                 <div class="col col-6">
                     <div class="text-center">
-                        <h1>GitHub</h1>
+                        <h1><u>GitHub</u></h1>
                         <p>You can view my coding projects on my GitHub profile here:</p>
                         <p>
                             <a href="https://github.com/JasonAlkain?tab=repositories" target="_blank">
-                                Zachary Aars (Jason Alkain) Github
-                            </a>
+                                    Zachary Aars (Jason Alkain) Github
+                                    </a>
                         </p>
                         <p>
                             Alternatively, you can also click the image to the right!
@@ -205,6 +214,32 @@
                     <a href="https://github.com/JasonAlkain?tab=repositories" target="_blank">
                         <img id="githubLink" src="images/GitHub.png" class="img-thumbnail w-75 float-end">
                     </a>
+                </div>
+            </div>
+            <!-- GitHub section -->
+            <div class="row m-2 bg-gradient p-4" id="GitHub">
+                <!-- Left column -->
+                <div class="col">
+                    <div class="text-center">
+                        <h1><u>LinkedIn Profile</u></h1>
+                        <a href="https://www.linkedin.com/in/zach-aars/" target="_blank">
+                            <img id="LinkedInProfileSnip" src="images/LinkedInProfileSnippet.png" class="border-dark img-thumbnail shadow-lg w-75">
+                        </a>
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div class="col col-6">
+                    <div class="text-center text-white">
+                        <h1><u>Resume</u></h1>
+                        <small>
+                            <p>Click <a href="docs/Resume- Aars, Zachary.pdf" target="_blank">here</a> to view in new tab!</p>
+                        </small>
+                        <div class="rounded-3 border p-3 bg-primary" style="height: 512px;">
+                            <iframe src="docs/Resume- Aars, Zachary.pdf#toolbar=0" width="100%" height="100%" class="shadow-sm">
+                            </iframe>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,9 +333,10 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
     <!-- Footer section -->
-    <footer class="footer mt-auto px-4 py-2 bg-light text-dark">
+    <footer class="footer m-0 mt-auto px-4 py-2 bg-light text-dark">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -311,6 +347,7 @@
             </div>
         </div>
     </footer>
+
     <!-- script tags -->
     <script src="JS/portfolio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
