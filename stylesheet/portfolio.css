@@ -24,8 +24,6 @@ body {
     font-size: 1.25vw;
     /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     overflow-x: hidden;
-    /* This prevents the text on the webpage from being highlighted by the user */
-    user-select: none;
 }
 
 
