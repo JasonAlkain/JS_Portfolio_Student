@@ -1,0 +1,85 @@
+:root {
+    --brand-acc: #0d6efd;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    transition: 3s opacity;
+}
+
+body.fade-out {
+    opacity: .1;
+}
+
+body[data-bs-theme="dark"] {
+    background-color: #121212;
+    color: #e7e7e7;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header .hero {
+    position: relative;
+    min-height: 78vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#Typing_Video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
+}
+
+main {
+    position: relative;
+    top: 480px;
+    
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 960px;
+}
+
+.hero-card {
+    position: absolute;
+    top: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    min-width: 70%;
+}
+
+.shadow-soft { 
+    box-shadow: 0 6px 32px rgba(0,0,0,.35); 
+}
+
+img[loading="lazy"] { 
+    content-visibility: auto; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #Typing_Video { display:none; }
+}
+
+.section-title { 
+    letter-spacing: .02em; 
+    font-weight: 800; 
+}
+
+.card.bg-dark {
+    --bs-card-bg: #1a1a1a;
+}
+
+footer a { 
+    color: inherit; 
+    text-decoration: underline; 
+}
+
+footer {
+    position: relative;
+    top: 480px;
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zachary Aars</title>
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/Square Custom Picture.png" />
+</head>
+
+<!-- Body -->
+
+<body class="bg-secondary text-light">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    <a class="nav-link" href="#About">About</a>
+                    <a class="nav-link" href="#Slideshow">Slideshow</a>
+                    <a class="nav-link" href="#GitHub">GitHub</a>
+                    <a class="nav-link" href="#ss_Projects">Projects</a>
+                    <a class="nav-link" href="#ss_Projects">Projects</a>
+                    <a class="nav-link" href="#Games">Games</a>
+                    <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    <!-- <a class="nav-link" href="index_updated.html">Updated Portfolio</a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="m-0 p-o w-100">
+        <!-- Header -->
+        <div>
+            <div class="cardtext-white">
+                <!-- card-img -->
+                <div class="card-img">
+                    <!-- Background video -->
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="Typing_Video">
+                        <source src="images/video/Typing.mp4" type="video/mp4">
+                        <!-- Display message if video fails to run -->
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <!-- card-img-overlay -->
+                <div class="card-img-overlay font-monospace m-5 p-3">
+                    <div class="card-title text-center m-3 p-4">
+                        <div class="container bg-dark bg-gradient border-dark shadow rounded-top rounded-pill p-5 w-75">
+                            <h1>Zachary's Portfolio</h1>
+                            <br>
+                            <div class="m-5">
+                                <strong>
+                                    <p>My name is Zachary. Welcome to my portfolio website. On it, I will tell you about my background and experience.</p>
+                                    <p>Thank you for stopping by and enjoy!</p>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-text text-center mx-0 my-5">
+                        <div class="container my-5 w-50">
+                            <figure class="bg-dark bg-gradient border-dark shadow-lg p-5 mb-5 rounded-pill">
+                                <blockquote class="blockquote mx-4 my-0">
+                                    The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or field of battle and to command such
+                                    unswervingly dutiful actors or troops.
+                                </blockquote>
+                                <figcaption class="blockquote-footer mx-4 my-0">
+                                    <strong>Joseph Weizenbaum</strong>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Carousel Slide section Header -->
+        <div class="container mx-auto pt-5">
+            <div class="text-center">
+                <h1><u>Slideshow</u></h1>
+            </div>
+
+        </div>
+        <!-- Carousel Slide section -->
+        <div class="container mx-auto my-5 p-2">
+            <div id="Slideshow" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Slideshow" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 of 6 -->
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/Square Personal Photo.png" alt="Picture of yourself">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Ready for work</h5>
+                            <p>I'm available to assist you on your project!</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Full-stack Software Developer</h5>
+                            <p>Training in:<br>HTML, CSS, JavaScript, Python, Django, C#, ASP.Net, and more!</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/Python.png" alt="Python logo">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Python Programming</h5>
+                            <p>Built Python applications and utilized various Python modules.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>C# and .NET Framework</h5>
+                            <p>Buit applications using ASP.NET, MVC</p>
+                        </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Back End Development</h5>
+                            <p>Databases,Microsoft SQL, SQLite, RDBMS</p>
+                        </div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="carousel-item">
+                        <img class="d-block w-50 rounded mx-auto" src="./images/Square Custom Picture.png" alt="Replace with a picture of your choosing">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Contact Me</h5>
+                            <a class="nav-link text-white" href="" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <p>Click here to send me a message</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Slideshow" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark  rounded-end rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Slideshow" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-start rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden-focusable">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sections -->
+        <div class="container-fluid mx-0 p-2">
+            <!-- About section -->
+            <div class="row m-2 bg-gradient p-4" id="About">
+                <!-- Left column -->
+                <div class="col">
+                    <img src="./images/html_custom.png"
+                        alt="Zach Aars — Unity game developer"
+                        class="rounded">
+                </div>
+
+                <!-- Right column -->
+                <div class="col text-center">
+                    <h1><u>About</u></h1>
+
+                    <div class="container w-75">
+                    <p class="mb-3">
+                        I build games and game-dev tools with <strong>Unity</strong> and <strong>C#</strong>.
+                        Tight scope. Fast iteration.
+                    </p>
+
+                    <ul class="text-start small list-unstyled mb-4">
+                        <li>• Focus: gameplay, UI/UX, tooling</li>
+                        <li>• Strengths: rapid prototyping, clean architecture, accessibility minded</li>
+                        <li>• Targets: Windows, WebGL, itch.io</li>
+                    </ul>
+
+                    <h5 class="mt-2">Recent releases</h5>
+                    <ul class="text-start mb-4">
+                        <li>
+                        <a href="https://allyn-david.itch.io/vtt-soundboard-gm" target="_blank" rel="noopener">
+                            VTT Soundboard (GM)
+                        </a>
+                        — quick audio triggers for VTT sessions.
+                        </li>
+                        <li>
+                        <a href="https://allyn-david.itch.io/gdd-maker" target="_blank" rel="noopener">
+                            Game Design Document Maker
+                        </a>
+                        — template-driven GDD creation.
+                        </li>
+                        <li>
+                        <a href="https://allyn-david.itch.io/wrong-number-late-night-call" target="_blank" rel="noopener">
+                            Wrong Number: Late Night Call
+                        </a>
+                        — short scare experience.
+                        </li>
+                    </ul>
+
+                    <h5 class="mt-2">Now</h5>
+                    <p class="mb-4">More small horror. Better tools. Faster loops.</p>
+
+                    <div class="mt-1">
+                        <a href="#Contact" class="btn btn-primary">Contact</a>
+                        <a href="docs/Zachary_Aars_Resume_2025.pdf" target="_blank" rel="noopener" class="btn btn-outline-light ms-2">Résumé</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub section -->
+            <div class="row m-2 bg-gradient p-4" id="GitHub">
+                <!-- Left column -->
+                <div class="col col-6">
+                    <div class="text-center">
+                        <h1><u>GitHub</u></h1>
+                        <p>You can view my coding projects on my GitHub profile here:</p>
+                        <p>
+                            <a href="https://github.com/JasonAlkain?tab=repositories" target="_blank" rel="noopener">
+                                    Zachary Aars (Jason Alkain) Github
+                                    </a>
+                        </p>
+                        <p>
+                            Alternatively, you can also click the image to the right!
+                        </p>
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div class="col">
+                    <a href="https://github.com/JasonAlkain?tab=repositories" target="_blank" rel="noopener">
+                        <img id="githubLink" src="images/GitHub.png" class="img-thumbnail w-75 float-end" alt="Github img">
+                    </a>
+                </div>
+            </div>
+            <!-- GitHub section -->
+            <div class="row m-2 bg-gradient p-4" id="GitHub">
+                <!-- Left column -->
+                <div class="col">
+                    <div class="text-center">
+                        <h1><u>LinkedIn Profile</u></h1>
+                        <a href="https://www.linkedin.com/in/zach-aars/" target="_blank" rel="noopener">
+                            <img id="LinkedInProfileSnip" src="images/LinkedInProfileSnippet.png" class="border-dark img-thumbnail shadow-lg w-75" alt="LinkedIn Profile">                        </a>
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div class="col col-6">
+                    <div class="text-center text-white">
+                        <h1><u>Resume</u></h1>
+                        <small>
+                            <p>Click <a href="docs/Zachary_Aars_Resume_2025.pdf" target="_blank">here</a> to view in new tab!</p>
+                        </small>
+                        <div class="rounded-3 border p-3 bg-primary" style="height: 512px;">
+                            <iframe title="Resume" src="docs/Zachary_Aars_Resume_2025.pdf#toolbar=0" width="100%" height="100%" class="shadow-sm"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project slideshow section-->
+        <div class="container mx-auto p-2 my-5">
+            <div class="text-center p-5 mx-auto">
+                <h1><u>Projects</u></h1>
+            </div>
+
+            <div id="ss_Projects" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#ss_Projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#ss_Projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#ss_Projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#ss_Projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" data-bs-interval="20000">
+                        <img class="d-block w-100 rounded mx-auto" src="./images/PH_DjangoProject.png" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Item Management System</h5>
+                            <p>A simple item management system developed using Python, Django, and SQLite</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img class="d-block w-100 rounded mx-auto" src="./images/PH_TheaterBlog.png" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Blog Implementation</h5>
+                            <p>Simple and straightforward blog designed for a theater company. Made with ASP.Net, Razor Pages, Microsoft SQL Database, and Bootstrap 4.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img class="d-block w-100 rounded mx-auto" src="./images/PH_Portfolio.png" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Protfolio Project</h5>
+                            <p>This site right here is built upon HTML, CSS, JavaScript, and Bootstrap 5</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img class="d-block w-100 rounded mx-auto" src="./images/MSHA_WAH.png" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-pill bg-secondary bg-gradient mx-auto p-1">
+                            <h5>Protfolio Project</h5>
+                            <p>This project was built in conjuction with MSHA, using Unity and VR technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ss_Projects" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ss_Projects" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+            </div>
+        </div>
+
+        <!-- Games section -->
+        <div class="container mx-auto p-2 my-5" id="Games">
+            <div class="text-center p-5 mx-auto">
+                <h1><u>Games</u></h1>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-dark text-light border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">VTT Soundboard (GM)</h5>
+                            <p class="card-text small">Fast audio triggers for virtual tabletops.</p>
+                            <iframe title="VTT Soundboard (GM)" frameborder="0" src="https://itch.io/embed/2772117?linkback=true&amp;border_width=2&amp;bg_color=D8C295&amp;fg_color=2F2F2F&amp;link_color=4A2C2A&amp;border_color=4f4b4c" width="210" height="169"><a href="https://allyn-david.itch.io/vtt-soundboard-gm">VTT Soundboard (GM Ready) by Allyn David</a></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-dark text-light border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Game Design Document Maker</h5>
+                            <p class="card-text small">Template-driven GDD tool.</p>
+                            <iframe title="GDD Maker" frameborder="0" src="https://itch.io/embed/3039403?linkback=true&amp;border_width=2&amp;bg_color=222&amp;fg_color=ffffff&amp;link_color=0484d1&amp;border_color=5b5b5b" width="210" height="169"><a href="https://allyn-david.itch.io/gdd-maker">GDD Maker by Allyn David</a></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 bg-dark text-light border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Wrong Number: Late Night Call</h5>
+                            <p class="card-text small">Short scare experience.</p>
+                            <iframe title="Wrong Number: Late Night Call" frameborder="0" src="https://itch.io/embed/3712250?linkback=true&amp;border_width=3&amp;bg_color=000000&amp;fg_color=9a9a9a&amp;link_color=bd1111&amp;border_color=3d4248" width="212" height="171"><a href="https://allyn-david.itch.io/wrong-number-late-night-call">Wrong Number: Late Night Call by Allyn David</a></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="modal fade text-dark" id="contactModal" tabindex="-1" aria-labelledby="contact" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contact">Contact</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-container" action="https://formspree.io/f/mbjqgzpz" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="col-form-label"><b>Name</b></label>
+                                <input type="text" class="form-control" placeholder="Agent Smith" name="name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label"><b>Phone</b></label>
+                                <input type="text" class="form-control" placeholder="012-345-6789" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label"><b>Email</b></label>
+                                <input type="text" class="form-control" placeholder="example@mail.com" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="col-form-label"><b>Message</b></label>
+                                <textarea class="form-control" placeholder="Type your message here!" name="message" rows="5"></textarea>
+                            </div>
+                            <hr>
+                            <div class="mb-3">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer m-0 mt-auto px-4 py-2 bg-light text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="center">Code referenced from &copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank" rel="noopener">The Tech Academy</a> | Zacharty Aars
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- script tags -->
+    <script src="JS/portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
